@@ -9,6 +9,7 @@ metadata:
   spec:
     containers:
     - name: web
+      imagePullPolicy: Always
       image: chamadavenkatashoora/web:k8
     ports:
       - containerPort: 80
