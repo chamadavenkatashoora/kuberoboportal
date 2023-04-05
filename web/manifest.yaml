@@ -11,6 +11,13 @@ metadata:
     - name: web
       imagePullPolicy: Always
       image: chamadavenkatashoora/web:k8
+      resources:
+        requests:
+         cpu:
+         memory: "100"
+        limits: "128Mi"
+         cpu: "100"
+         memory: "128Mi"
     ports:
       - containerPort: 80
 ---
